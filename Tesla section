@@ -1,0 +1,4 @@
+tesla = yf.Ticker("TSLA")
+tesla_hx = tesla.history(period="max")
+last_rows = tesla_hx.tail(5)
+print(last_rows)
